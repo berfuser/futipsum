@@ -1,0 +1,87 @@
+function futIpsum(element, qt) {
+	
+	// List with players that have a corintian prostar 
+	// http://www.corinthianseller.co.uk/prostars-player-list.php
+	// 
+	var players = new Array("Eric Cantona","Paolo Montero","Massimo Ambrosini","Faustino Asprilla",
+										"Roberto Baggio",
+										"Michael Ballack",
+										"Franco Baresi",
+										"Milan Baros",
+										"Gabriel Batistuta",
+										"Bebeto",
+										"Franz Beckenbauer",
+										"David Beckham",
+										"Craig Bellamy",
+										"Juliano Belletti",
+										"Dennis Bergkamp",
+										"Giuseppe Bergomi",
+										"Laurent Blanc",
+										"Andreas Brehme",
+										"Gianluigi Buffon",
+										"Cafu",
+										"Mauro Camoranesi",
+										"Ivan Campo",
+										"Fabio Cannavaro",
+										"Claudio Cannigia",
+										"Roberto Carlos",
+										"Enrico Chiesa",
+										"Francesco Coco",
+										"Andy Cole",
+										"Ashley Cole",
+										"Joe Cole",
+										"Pierluigi Collina",
+										"Sergio Conceicao",
+										"Alessandro Costacurta",
+										"Fernando Couto",
+										"Hernan Crespo",
+										"Peter Crouch",
+										"Johan Cruyff",
+										"Julio Cruz",
+										"Teofilo Cubillas",
+										"Olivier Dacourt",
+										"Edgar Davids",
+										"Daniele De Rossi",
+										"Alessandro Del Piero",
+										"Paolo Di Canio",
+										"El-Hadji Diouf",
+										"Roberto Donadoni",
+										"Didier Drogba",
+										"Damien Duff",
+										"Edmilson",
+										"Edu",
+										"Elano",
+										"Preben Elkjaer",
+										"Ferreira Emerson",
+										"Belozoglu Emre",
+										"Michael Essien",
+										"Samuel Etoo",
+										"Eusebio",
+										"Alex Ferguson",
+										"Ciro Ferrara",
+										"Luis Figo",
+										"Steve Finnan",
+										"Darren Fletcher",
+										"Diego Forlan",
+										"Robbie Fowler",
+										"Brad Friedel",
+										"Morten Gamst Pedersen",
+										"Garrincha",
+										"Paul Gascoigne",
+										"Gennaro Gattuso",
+										"Steven Gerrard",
+										"Stelios Giannakopoulos",
+										"Ryan Giggs",
+										"Alberto Gilardino",
+										"Gilberto Silva",
+										"Eidur Gudjohnsen"
+
+
+										);
+
+	var ret = "";
+	for(i = 0; i < qt; i++) {
+		ret += " " + players[Math.floor(Math.random() * (players.length - 1))];;
+	}
+	document.getElementById(element).innerHTML = document.getElementById(element).innerHTML + "<p>" + ret + ".</p>";
+}
